@@ -13,7 +13,7 @@ include("config/db_connect.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp</title>
-    <?php include('include_files.php'); ?>
+    <?php include('cdns.php'); ?>
     <style>
         body {
             height: 100%;
@@ -27,11 +27,8 @@ include("config/db_connect.php");
 
         .progress {
             margin-top: 10vh !important;
-            /* position: fixed;
-            width:70%; */
             background-color: darkslategrey;
         }
-
 
         .logo {
             margin-left: 50%;
@@ -93,12 +90,12 @@ include("config/db_connect.php");
     <div class="preloader">
         <div class="container">
             <div class="logo-container">
-                <img class="logo" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" alt="">
+                <img class="logo" src="img/loader.png" alt="Logo">
             </div>
             <div class="progress">
                 <div class="determinate" style="width: 0%"></div>
             </div>
-            <div class="brand-text white-text center"> WhatsApp <br> <i class="fas white-text fa-lock"></i> End-to-end encrypted </div>
+            <div class="brand-text white-text center"> WhatsApp <br> <i class="fas white-text fa-unlock"></i> ! End-to-end encrypted </div>
         </div>
     </div>
 
