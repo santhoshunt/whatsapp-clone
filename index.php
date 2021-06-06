@@ -36,7 +36,7 @@ if (isset($_POST['login'])) {
         if ($result) {
             $id = mysqli_fetch_array($result);
             $_SESSION['user_id'] = $id['user_id'];
-            header('Location: preloader.php');
+            header('Location: home.php');
         } else {
             $errors['user_number'] = "Phone number not found in database <br> please check your number or register";
         }
@@ -76,7 +76,7 @@ if (isset($_POST['register'])) {
         $sql = "INSERT INTO users (user_name,user_password,user_number) VALUES ('$reg_user_name','$reg_user_password','$reg_user_number')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
-            header('Location: preloader.php');
+            header('Location: home.php');
         } else {
             echo mysqli_error($conn);
         }
